@@ -1,0 +1,25 @@
+ src/misc/pk_get_oid.c |    8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/src/misc/pk_get_oid.c b/src/misc/pk_get_oid.c
+index d13266e..bc54de1 100644
+--- a/src/misc/pk_get_oid.c
++++ b/src/misc/pk_get_oid.c
+@@ -10,13 +10,13 @@
+ #include "tomcrypt.h"
+ 
+ static const oid_st rsa_oid = {
+-   .OIDlen = 7,
+-   .OID = { 1, 2, 840, 113549, 1, 1, 1  },
++    { 1, 2, 840, 113549, 1, 1, 1  },
++    7,
+ };
+ 
+ static const oid_st dsa_oid = {
+-   .OIDlen = 6,
+-   .OID = { 1, 2, 840, 10040, 4, 1  },
++    { 1, 2, 840, 10040, 4, 1  },
++    6,
+ };
+ 
+ /*
